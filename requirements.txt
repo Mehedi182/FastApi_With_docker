@@ -1,0 +1,3 @@
+fastApi
+sqlalchemy
+psycopg2==2.7.5
