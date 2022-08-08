@@ -3,6 +3,7 @@ from typing import List, Optional
 
 
 class AddressOutSchema(BaseModel):
+    id: Optional[int]
     district: Optional[str]
     code: Optional[str]
 

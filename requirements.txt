@@ -1,3 +1,4 @@
 fastApi
 sqlalchemy
-psycopg2==2.7.5
+uvicorn
+psycopg2-binary == 2.9.3

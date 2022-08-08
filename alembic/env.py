@@ -15,10 +15,10 @@ config = context.config
 config.set_main_option(
     "sqlalchemy.url",
     f'postgresql+psycopg2://postgres:1234@127.0.0.1:5432/test_db')
-if os.getenv('TESTING'):
-    config.set_main_option(
-        "sqlalchemy.url",
-        f'postgresql+psycopg2://postgres:1234@127.0.0.1:5432/test_db_test')
+# if os.getenv('TESTING'):
+#     config.set_main_option(
+#         "sqlalchemy.url",
+#         f'postgresql+psycopg2://postgres:1234@127.0.0.1:5432/test_db_test')
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.

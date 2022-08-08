@@ -14,5 +14,5 @@ class Base:
     def __tablename__(cls) -> str:
         return cls.__name__.lower()
 
-    __table_args__ = {'extend_existing': True}
+    # __table_args__ = {'extend_existing': True}
 

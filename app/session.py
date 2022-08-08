@@ -1,4 +1,3 @@
-
 from sqlalchemy import create_engine
 # from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -24,6 +23,6 @@ def get_db():
     finally:
         db.close()
 
-
-def get_session():
-    return scoped_session(SessionLocal)
+#
+# def get_session():
+#     return scoped_session(SessionLocal)
