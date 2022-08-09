@@ -1,4 +1,4 @@
-demo_env/
+demo_env
 .idea
 .ipynb_checkpoints
 .mypy_cache

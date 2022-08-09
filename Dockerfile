@@ -1,11 +1,12 @@
-FROM python:3.8
-#RUN mkdir -p /code
-#WORKDIR /code
+FROM python:3.9-slim
 
-COPY requirements.txt /
-RUN pip install --requirement /requirements.txt
+COPY ./ /app
+COPY ./requirements.txt /app
 
-COPY ./app /app
+WORKDIR /app
+
+RUN pip3 install -r requirements.txt
 
 EXPOSE 8000
-CMD ["uvicorn", "app.main:app",  "--reload"]
+
+CMD ["uvicorn", "app.main:app", "--host=0.0.0.0", "--reload"]
