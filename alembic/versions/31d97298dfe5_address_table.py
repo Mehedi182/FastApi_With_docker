@@ -1,4 +1,4 @@
-"""address table
+"""crud table
 
 Revision ID: 31d97298dfe5
 Revises: 

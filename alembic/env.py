@@ -5,7 +5,7 @@ from sqlalchemy import pool
 from pydantic import BaseSettings
 from alembic import context
 from app.db.base_class import Base
-from app.address.models import Districts
+from app.crud.models import Districts
 
 
 # this is the Alembic Config object, which provides

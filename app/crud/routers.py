@@ -7,8 +7,8 @@ from sqlalchemy.orm import Session
 
 
 router = APIRouter(
-    tags=["address_router"],
-    prefix="/address_router"
+    tags=["crud_router"],
+    prefix="/crud_router"
 )
 
 
